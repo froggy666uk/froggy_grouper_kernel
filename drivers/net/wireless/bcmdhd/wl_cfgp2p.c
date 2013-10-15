@@ -809,7 +809,7 @@ wl_cfgp2p_act_frm_search(struct wl_priv *wl, struct net_device *ndev,
 	u16 *default_chan_list = NULL;
 	if (!p2p_is_on(wl))
 		return -BCME_ERROR;
-	CFGP2P_ERR((" Enter\n"));
+	CFGP2P_DBG((" Enter\n"));
 	if (bssidx == P2PAPI_BSSCFG_PRIMARY)
 		bssidx =  wl_to_p2p_bss_bssidx(wl, P2PAPI_BSSCFG_DEVICE);
 	if (channel)
